@@ -1,0 +1,78 @@
+[location:c/user/desktop/djangoreact]
+
+step1: create venv
+	python -m venv env
+step2:env/scripts/activate
+
+step3:npx create-react-app reactbus
+step4:cd reactbus
+	[location:c/user/desktop/djangoreact/reactbus]
+
+step5:cd ..
+	[location:c/user/desktop/djangoreact]
+step6:pip install django
+step7:create a project in django
+	django-admin startproject djangobus
+step8: cd djangobus
+[location:c/user/desktop/djangoreact/djangobus]
+	python manage.py startapp home
+
+step9: add home in installed_app(settings.py)
+
+settinngs.py->
+	database connection
+	image(ex=uplaods)path
+
+create urls.py in home module
+	connect in main urls.py(djangobus)
+
+models.py-> table create (orm)
+admin.py->register
+	
+	python manage.py makemigrations
+	python manage.py migrate
+	python manage.py createsuperuser
+
+wirte codes in views.py(class based view)
+function call in urls.py(home)
+
+runserver:
+	python manage.py runserver
+
+(image add in db: install pillow
+	settings:mediaurl,mediaroot
+	urls.py(djangobus) append static meida 
+	
+
+
+
+take another vb
+[location:c/user/desktop/djangoreact]
+step1:cd reactbus
+step2:npm start
+step3: create components(class based)
+
+
+	
+(index.html[ div=root]<-index.js<-app.js<-more than one compnonets)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
